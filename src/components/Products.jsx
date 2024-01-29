@@ -4,21 +4,21 @@ const Products = () => {
   const data = [
     {
       id: 12,
-      img: "../assets/img/product13.jpg",
+      img: "../src/assets/img/product13.jpg",
       name: "Canvas Sneakers",
       price: "298.00",
       discount: "28% Off",
     },
     {
       id: 13,
-      img: "../assets/img/product14.jpg",
+      img: "../src/assets/img/product14.jpg",
       name: "shirt combo pack ",
       price: "199.00",
       discount: "40% Off",
     },
     {
       id: 14,
-      img: "../assets/img/product15.jpg",
+      img: "../src/assets/img/product15.jpg",
       name: "Hublot watch",
       price: "198.00",
       discount: "26% Off",
