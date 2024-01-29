@@ -3,47 +3,52 @@ import ProductCard from '../layouts/ProductCard';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Img from "../assets/img/product1.jpg"
+import Img1 from "../assets/img/product1.jpg"
+import Img2 from "../assets/img/product2.jpg"
+import Img3 from "../assets/img/product3.jpg"
+import Img4 from "../assets/img/product4.jpg"
+import Img5 from "../assets/img/product5.jpg"
+import Img6 from "../assets/img/product6.jpg"
 const Shop = () => {
   const data = [
     {
       id: 0,
-      img: "../src/assets/img/product1.jpg",
+      img: Img1,
       name: "Nike Air",
       price: "198.00",
       discount: "20% Off",
     },
     {
       id: 1,
-      img: "../src/assets/img/product2.jpg",
+      img: Img2,
       name: "Sportswear Futura",
       price: "208.00",
       discount: "40% Off",
     },
     {
       id: 2,
-      img: "../src/assets/img/product3.jpg",
+      img: Img3,
       name: "Royal Collection",
       price: "104.00",
       discount: "35% Off",
     },
     {
       id: 3,
-      img: "../src/assets/img/product4.jpg",
+      img: Img4,
       name: "t-shirt combo pack",
       price: "299.00",
       discount: "40% Off",
     },
     {
       id: 4,
-      img: "../src/assets/img/product5.jpg",
+      img: Img5,
       name: "CozyCraze Hoodies",
       price: "159.00",
       discount: "23% Off",
     },
     {
       id: 5,
-      img: "../src/assets/img/product6.jpg",
+      img: Img6,
       name: "LuxeLoom Purses",
       price: "189.00",
       discount: "30% Off",
@@ -100,7 +105,7 @@ const Shop = () => {
         <Slider {...settings}>
         {
           data.map((item)=>(
-            <ProductCard key={item.id} id={item.id} img={Img} name={item.name}  price={item.price} discount={item.discount} />
+            <ProductCard key={item.id} id={item.id} img={item.img} name={item.name}  price={item.price} discount={item.discount} />
           ))
         }
         </Slider>
